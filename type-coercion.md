@@ -1,6 +1,6 @@
 Type coercion
 ================
-Naomi Ekas
+Matthew Espinosa
 
 -   `c(1, 1L, "C")`
 
@@ -29,8 +29,10 @@ c(1, 1L, "C")
     ## [1] "C"
 
 ``` r
-#typeof(c(1, 1L, "C"))
+typeof(c(1, 1L, "C"))
 ```
+
+    ## [1] "character"
 
 -   `c(1L / 0, "A")`
 
@@ -65,8 +67,10 @@ typeof("A")
     ## [1] "character"
 
 ``` r
-#typeof(c(1L / 0, "A"))
+typeof(c(1L / 0, "A"))
 ```
+
+    ## [1] "character"
 
 -   `c(1:3, 5)`
 
@@ -89,8 +93,10 @@ typeof(5)
     ## [1] "double"
 
 ``` r
-#typeof(c(1:3, 5))
+typeof(c(1:3, 5))
 ```
+
+    ## [1] "double"
 
 -   `c(3, "3+")`
 
@@ -113,8 +119,10 @@ typeof("3+")
     ## [1] "character"
 
 ``` r
-#typeof(c(3, "3+"))
+typeof(c(3, "3+"))
 ```
+
+    ## [1] "character"
 
 -   `c(NA, TRUE)`
 
@@ -137,5 +145,7 @@ typeof(TRUE)
     ## [1] "logical"
 
 ``` r
-#typeof(c(NA, TRUE))
+typeof(c(NA, TRUE))
 ```
+
+    ## [1] "logical"
