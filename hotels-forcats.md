@@ -1,6 +1,6 @@
 Hotel bookings - factors
 ================
-Naomi Ekas
+Matthew Espinosa
 
 ``` r
 library(tidyverse)
